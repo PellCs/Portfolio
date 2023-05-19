@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Self Portrait</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="nav-bar">
+        <li><a href="index.html">Home</a></li>
+        <li class="nav-text">Post-Production MMP100</li>
+        <li><a href="about_me.html">About Me</a></li>
+      </ul>
+    </nav>
+    <div class="carousel-container">
+      <div class="squares-container">
+        <div class="square">
+          <h2 class="subway-title">Self-Portrait</h2>
+          <h5>Click on the Image</h5>
+          <div class="card" onclick="toggleFlip()">
+            <div class="card-content front">
+              <img src="images (1).jpg" alt="Image 1" />
+              <p class="graphic">
+                I curated a collection of captivating images, including night
+                skies, game consoles, a sleek vehicle, and the iconic Goku
+                character from Dragon Ball. Each image represents my unique
+                interests and passions. Integrating these seven images into a
+                cohesive composition posed the challenge of maintaining visual
+                harmony while allowing the car and character to stand out. The
+                result is a visually captivating reflection of my personal
+                inclinations.
+              </p>
+            </div>
+            <div class="card-content back">
+              <img src="SelfWR_NurulS.png" alt="Self" />
+              <p class="graphic">
+                Personal reflection of myself, carefully crafted to make a bold
+                statement through vibrant colors. These colors were deliberately
+                chosen to accentuate my presence and create a visually striking
+                effect. They hold deep personal significance, as I have a
+                genuine fondness and strong attraction to them. Naturally, the
+                primary inspiration for this artwork was none other than myself,
+                serving as the subject and driving force behind its creation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function toggleFlip() {
+        document.querySelector(".card").classList.toggle("flipped");
+      }
+    </script>
+  </body>
+</html>
